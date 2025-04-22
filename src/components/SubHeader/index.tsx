@@ -1,4 +1,7 @@
 import { Calendar, Filter, Search } from "lucide-react";
+import { FaCalendarAlt } from "react-icons/fa";
+import { IoIosSearch } from "react-icons/io";
+import { IoFilter } from "react-icons/io5";
 
 const SubHeader = () => {
   return (
@@ -19,11 +22,12 @@ const SubHeader = () => {
           className="flex items-center gap-2 bg-[#f8f9fb] border border-gray-200 px-4 py-2 text-sm text-gray-600 w-72"
           style={{
             borderColor: "#E5E7EB",
-            padding: "6px 10px",
+            padding: "8px 10px",
             borderRadius: "8px",
+            gap: "5px",
           }}
         >
-          <Search className="text-gray-400" style={{ fontSize: "12px" }} />
+          <IoIosSearch className="text-gray-400" />
           <input
             type="text"
             placeholder="Search"
@@ -42,7 +46,9 @@ const SubHeader = () => {
             fontSize: "14px",
           }}
         >
-          <Calendar style={{ color: "#1C1442" }} />
+          <FaCalendarAlt />
+
+          {/* <Calendar style={{ color: "#1C1442" }} /> */}
         </button>
 
         {/* Filter Button */}
@@ -55,7 +61,9 @@ const SubHeader = () => {
             fontSize: "14px",
           }}
         >
-          <Filter style={{ color: "#1C1442" }} />
+          <IoFilter />
+
+          {/* <Filter style={{ color: "#1C1442" }} /> */}
         </button>
       </div>
 

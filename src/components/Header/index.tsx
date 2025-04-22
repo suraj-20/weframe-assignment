@@ -1,4 +1,5 @@
-import { ChevronDown, ArrowLeft } from "lucide-react";
+import { FaArrowLeftLong } from "react-icons/fa6";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
     >
       {/* Left Side */}
       <div className="flex items-center gap-2" style={{ gap: "10px" }}>
-        <ArrowLeft
+        <FaArrowLeftLong
           className="w-5 h-5 text-gray-800"
           style={{ fontSize: "16px" }}
         />
@@ -54,9 +55,9 @@ const Header = () => {
             </p>
           </div>
         </div>
-        <ChevronDown
+        <IoIosArrowDown
           className="w-4 h-4 text-gray-500 ml-2"
-          style={{ fontSize: "10px" }}
+          style={{ fontSize: "14px" }}
         />
       </div>
     </div>
