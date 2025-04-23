@@ -2,14 +2,17 @@ import Header from "@/components/Header";
 import StatusFilter from "@/components/StatusFilter";
 import StoryGrid from "@/components/StoryGrid/StoryGrid";
 import SubHeader from "@/components/SubHeader";
+import React from "react";
 
-export default function Home() {
+const ContentPage = () => {
   return (
-    <main className="bg-[#f9f9f9] min-h-screen">
-      <Header heading="Home" />
+    <>
+      <Header heading="Stories" />
       <SubHeader />
       <StatusFilter />
       <StoryGrid />
-    </main>
+    </>
   );
-}
+};
+
+export default ContentPage;

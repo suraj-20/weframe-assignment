@@ -1,7 +1,7 @@
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
 
-const Header = () => {
+const Header = ({ heading }: { heading: String }) => {
   return (
     <div
       className="flex justify-between items-center px-6 py-4 bg-white shadow-sm"
@@ -9,6 +9,10 @@ const Header = () => {
         height: "60px",
         boxShadow: "0 1px 1px rgba(0, 0, 0, 0.1)",
         padding: "0px 30px",
+        position: "sticky",
+        top: "0",
+        zIndex: "10",
+        backgroundColor: "#ffffff",
       }}
     >
       {/* Left Side */}
@@ -21,7 +25,7 @@ const Header = () => {
           className="text-lg font-semibold text-gray-900"
           style={{ fontSize: "25px" }}
         >
-          Stories
+          {heading}
         </h1>
       </div>
 

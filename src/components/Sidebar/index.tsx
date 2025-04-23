@@ -15,7 +15,7 @@ import { MdOutlineSubscriptions } from "react-icons/md";
 
 const navLinks = [
   { label: "Dashboard", href: "/dashboard", icon: <RiHome5Line /> },
-  { label: "Content", href: "/", icon: <PiNote /> },
+  { label: "Content", href: "/content", icon: <PiNote /> },
   { label: "User", href: "/user", icon: <TbUserSquareRounded /> },
   { label: "Task", href: "/task", icon: <HiOutlineUsers /> },
   { label: "App/Web", href: "/app-web", icon: <IoDesktopOutline /> },
