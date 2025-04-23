@@ -1,4 +1,3 @@
-import { Calendar, Filter, Search } from "lucide-react";
 import { FaCalendarAlt } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { IoFilter } from "react-icons/io5";
