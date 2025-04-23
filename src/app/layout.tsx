@@ -17,14 +17,17 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <head />
-
       <body className={`bg-[#FCFCFC] dark:bg-black ${urbanist.className}`}>
-        <div className="flex h-screen">
-          {/* Sidebar */}
+        <div className="relative h-screen flex">
           <Sidebar />
 
-          {/* Main Content */}
-          <main className="flex-1 overflow-y-auto p-4">{children}</main>
+          {/* Main content: pushes right only on desktop */}
+          <main
+            className="flex-1 overflow-y-auto p-4"
+            // style={{ marginLeft: "200px" }}
+          >
+            {children}
+          </main>
         </div>
       </body>
     </html>
